@@ -1,0 +1,10 @@
+body {
+  background: #000;
+  background-image: url("/img/barricas.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
