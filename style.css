@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Libre+Baskerville:wght@400;700&display=swap");
 body {
   background: #000;
   background-image: url("/img/barricas.png");
@@ -5,6 +6,169 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+}
+
+header {
+  height: 7vh;
+  padding: 3vh 6vw 0 6vw;
+  font-family: "Lato";
+  color: #fff;
+}
+header .mobileNav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+header .mobileNav img {
+  max-height: 3rem;
+  max-width: 4rem;
+}
+header .socialMedia {
+  height: 100%;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+  font-weight: lighter;
+  border-bottom: #fff 1px solid;
+}
+header .storeData ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 20rem;
+}
+header .storeData ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  width: 11.3rem;
+}
+header .storeData ul li img {
+  height: 1.1rem;
+  width: 1.1rem;
+}
+header .storeData ul li p {
+  text-decoration: underline;
+}
+header .storeData ul li:nth-child(1) {
+  width: 8rem;
+}
+header .storeData ul li:nth-child(1) img {
+  width: 1rem;
+}
+header .storeData ul li:nth-child(2) {
+  width: 11rem;
+}
+header .storeData ul li:nth-child(2) img {
+  width: 1.5rem;
+}
+header .socialMediaIcons {
+  margin-left: 1rem;
+}
+header .socialMediaIcons ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  width: 4rem;
+}
+header .socialMediaIcons ul img {
+  width: 1.6rem;
+}
+
+nav {
+  display: none;
+  height: 100%;
+  justify-content: space-around;
+}
+nav .logoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav h1 {
+  font-family: "Libre Baskerville";
+  color: rgb(255, 187, 0);
+}
+nav .navbarContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 64vw;
+}
+nav .navbarContainer ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav .navbarContainer ul li {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.landingSectionWrap .mainIMG {
+  background-image: url("/img/winefield1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  margin-top: 5vh;
+  height: 55vh;
+  max-height: 30rem;
+  width: 100%;
+}
+.landingSectionWrap .mainIMG .bootle {
+  display: flex;
+  justify-content: center;
+}
+.landingSectionWrap .mainIMG .bootle img {
+  /* width: 35%;
+   height: 35%;
+   max-width: 7rem;
+   max-height: 20rem; */
+  width: 18vh;
+}
+.landingSectionWrap .titleContainer {
+  margin-top: 8vh;
+  padding: 0 4vh;
+  color: #fff;
+}
+.landingSectionWrap .titleContainer h1 {
+  font-family: "Libre Baskerville";
+}
+.landingSectionWrap .titleContainer h2 {
+  font-family: "Lato";
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 700px) {
+  header {
+    padding: 1vh 6vw 0 6vw;
+  }
+  header .socialMedia {
+    display: flex;
+  }
+  header .mobileNav {
+    display: none;
+  }
+  nav {
+    display: flex;
+  }
+  .landingSectionWrap .mainIMG {
+    margin-top: 8vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
