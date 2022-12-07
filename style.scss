@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
+:root{
+    --logo-color:  rgb(255, 187, 0);
+    --Libre-Font:"Libre Baskerville";
+}
 
 body{
     background: #000;
@@ -23,13 +27,20 @@ header{
 
     .mobileNav{
         display: flex;        
+        align-items: center;
         justify-content: space-between;
         height: 100%;
 
-        img{
-            max-height: 3rem;
-            max-width: 4rem;
+        h1{
+            font-family: var(--Libre-Font);
+            color: var(--logo-color);
         }
+
+            img{
+                cursor: pointer;
+                max-height: 2rem;
+                max-width: 3rem;
+            }
         }
     
 
@@ -99,8 +110,8 @@ header{
 
   nav{
     display: none; 
-    height: 100%;
-    justify-content: space-around;   
+    height: 100%;    
+    justify-content: space-between;   
 
     .logoContainer{
         display: flex;
@@ -109,8 +120,8 @@ header{
     }
     h1{
        
-        font-family: "Libre Baskerville";
-        color: rgb(255, 187, 0);
+        font-family: var(--Libre-Font);
+        color: var(--logo-color);
     }
     .navbarContainer{
         height: 100%;
@@ -119,9 +130,9 @@ header{
         justify-content: center;
         text-align: center;
         width: 64vw;
+        max-width: 36rem;
         ul{
-            padding: 0;
-          
+            padding: 0;          
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -137,8 +148,7 @@ header{
 .landingSectionWrap{
     .mainIMG{       
         background-image: url("/img/winefield1.png");
-        background-repeat: no-repeat;
-       
+        background-repeat: no-repeat;       
         background-position: center;
         background-size: cover;
         margin: 0;
@@ -157,21 +167,26 @@ header{
                 max-height: 20rem; */
 
                 width: 18vh;
+                height: 60vh;
             }
         }
     }    
 
     .titleContainer{
-        margin-top: 8vh;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 0 4vh;
         color: #fff;
-        h1{            
-            font-family: "Libre Baskerville";
+        h1{          
+            font-size: 1.6rem;  
+            font-family: var(--Libre-Font);
         }    
 
         h2{
             font-family: "Lato";
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 300;
         }
     }
@@ -185,7 +200,7 @@ header{
   @media only screen and (min-width: 700px) {
    
    header{
-    padding: 1vh 6vw 0 6vw;
+    padding: 1vh 8vw 0 6vw;
     .socialMedia{
         display: flex;
     }
@@ -197,12 +212,80 @@ header{
 
     nav{
         display: flex;
+
+        .navbarContainer{
+            ul{
+                li{
+                    font-weight: 500;
+                }
+            }
+        }
     }
 
     .landingSectionWrap{
+        justify-content: end;
         .mainIMG{
+            display: flex;
+            justify-content: end;
             margin-top: 8vh;
         }
+
+        .bootle{
+            display: flex;
+            position: relative;
+            
+            
+            img{
+                right: 10vw;
+                position: absolute;                
+                }
+        }
+
+        .titleContainer{
+            padding: 0 8vw;
+            h1{
+                font-size: 3rem;
+            }
+            h2{
+                font-size: 1.6rem;
+            }
+        }
     }
+
+    
+    
+  }
+
+  @media only screen and (min-width: 1280px){
+
+    header{
+        padding: 0 8vw;
+    }
+
+.landingSectionWrap{
+    .bootle{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+
+        img{
+            position: absolute;
+            right: 16vw;   
+        }
+    }
+
+    .titleContainer{
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+
+}
+    
+
     
   }
