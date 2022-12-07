@@ -1,9 +1,11 @@
 
+@use 'sections';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root{
     --logo-color:  rgb(255, 187, 0);
     --Libre-Font:"Libre Baskerville";
+    --Lato-Font: "Lato";
 }
 
 body{

@@ -1,0 +1,144 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.section:nth-child(3){
+    background-color: #131313;
+    padding: 4rem 0;
+    color: #fff;
+
+    .sectionContent{
+       
+    }
+}
+
+.sectionTitleContainer{
+    padding: 0 1rem;
+    
+    text-align: center;
+    h2{
+        font-family: var(--Libre-Font);
+    }
+
+    h3{
+        font-family: var(--Lato-Font);
+        font-weight: 300;
+    }
+}
+
+
+
+.fieldIMGContainer{
+    margin-top: 3rem;
+    background-image: url("/img/winefield2.png");
+    background-repeat: no-repeat;
+   // background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+    height: 16rem;
+}
+
+.wineIMGContainer{
+    margin-top: 3rem;
+    background-image: url("/img/wine.png");
+    background-repeat: no-repeat;
+   // background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+    height: 16rem;
+}
+
+.sectionsText{
+    padding: 2rem;
+    .textContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-size: 1rem;
+            text-align: center;
+            font-family: var(--Lato-Font);
+        }
+
+        img{
+            width: 10rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+
+    hr{
+        width: 90vw;
+    }
+
+    .section{
+
+        .sectionTitleContainer{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .section:nth-child(3){
+     
+        .sectionContent{
+            flex-direction: row;
+            margin-top: 2rem;
+        }
+    }
+
+    .sectionContent{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        .fieldIMGContainer{
+            margin: 0;
+            width: 50%;
+            height: 40vh;
+            max-height: 20rem;
+            width: 40vw;
+            max-width: 24rem;
+        }
+        .wineIMGContainer{
+            margin: 0;
+            width: 50%;
+            height: 40vh;
+            max-height: 20rem;
+            width: 40vw;
+            max-width: 24rem;
+        }
+
+        .sectionsText{            
+            width: 50%;
+            .textContainer{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p{
+                    text-align: left;
+                    font-size: 1.2rem;
+                    max-width: 30rem;
+                }
+                img{
+                   align-self: flex-end;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1280px){
+    .sectionContent{
+        max-width: 80rem;
+    }
+}
