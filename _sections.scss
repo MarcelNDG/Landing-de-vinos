@@ -5,6 +5,8 @@
     align-items: center;
     padding: 4rem 0;
     background-color: #fff;
+
+    
 }
 
 .section:nth-child(3){
@@ -14,6 +16,65 @@
 
     .sectionContent{
        
+    }
+}
+
+.section:nth-child(4){
+
+    background-color: #fff;
+
+    .sectionContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:  0 2rem;
+        .contactContent{
+            margin-top: 2rem;
+            p{
+                text-align: center;
+                font-family: var(--Lato-Font);
+            }
+        }
+
+        .contactSocial{
+            h3{
+                font-family: var(--Lato-Font);
+            }
+            ul{
+                
+                li{
+                    display: flex;
+                    align-items: center;
+                    font-family: var(--Lato-Font);
+                }
+            }
+
+        .contactInfo{
+            padding: 0;
+            background-color:aqua;
+                width: 60vw;
+                display: flex;               
+                
+                flex-direction: column;
+                li{
+                    img{
+                        width: 2rem;
+                        margin-right: 1rem;
+                    }                
+                 }
+        }
+        .socialInfo{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color:aqua;
+            align-items: center;
+            
+        }
+
+
+        }
     }
 }
 
@@ -72,6 +133,7 @@
     }
 }
 
+
 @media only screen and (min-width: 700px){
 
     hr{
@@ -80,9 +142,15 @@
 
     .section{
 
+        .sectionContent{
+            align-items: flex-start;
+        }
+        
         .sectionTitleContainer{
             margin-bottom: 2rem;
         }
+
+       
     }
 
     .section:nth-child(3){
@@ -90,8 +158,10 @@
         .sectionContent{
             flex-direction: row;
             margin-top: 2rem;
+            
         }
     }
+    
 
     .sectionContent{
         width: 100%;
