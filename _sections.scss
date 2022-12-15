@@ -13,34 +13,108 @@
     background-color: #131313;
     padding: 4rem 0;
     color: #fff;
-
-    .sectionContent{
-       
-    }
 }
 
 .section:nth-child(4){
 
+    padding:4rem 1rem ;
+   
     background-color: #fff;
+
+    .contactForm{
+       
+        margin: 2rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #545454;
+        border-radius: 8px;
+        height: 21rem;
+        padding: 2rem 1rem;
+       
+
+        h3{
+            font-size: 1.6rem;
+            color: #fff;
+            font-family: var(--Lato-Font);
+            margin-bottom: 1rem;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;      
+                 
+            width: 80%;
+
+            p{
+                width: 90%;
+                color: #fff;
+                font-family: var(--Lato-Font);
+                font-size: 1.4rem;
+
+            }
+
+            input{
+                
+                border: none;
+                height: 1.8rem;
+                border-radius: 4px;
+                width: 90%;
+                padding: 0 0 0 0.8rem;
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+
+            .submit{
+               
+                
+                width: 10rem;
+                height: 3rem;
+                font-size: 1.6rem;
+                font-weight:500;
+                border-radius: 8px;
+                color: #fff;
+                background-color: #131313;
+            }
+        }
+    }
 
     .sectionContent{
         display: flex;
+        margin: 0;
+        margin-top: 2rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding:  0 2rem;
+       
+        width: 100%;
+        
+
+        
         .contactContent{
-            margin-top: 2rem;
+
+            width: 80%;
+
             p{
+                font-size: 1.4rem;
+                font-weight: 400;
+                margin: 0;
                 text-align: center;
                 font-family: var(--Lato-Font);
             }
         }
 
         .contactSocial{
+
+            margin-top: 2rem;
+
             h3{
+                margin-top: 2rem;
                 font-family: var(--Lato-Font);
             }
+
             ul{
                 
                 li{
@@ -50,28 +124,37 @@
                 }
             }
 
-        .contactInfo{
-            padding: 0;
-            background-color:aqua;
-                width: 60vw;
-                display: flex;               
+            .contactInfo{
+                padding: 0;
+               
+                    width: 60vw;
+                    display: flex;               
+                    
+                    flex-direction: column;
+
+                    li{
+                        img{
+                            width: 2rem;
+                            margin-right: 1rem;
+                        }                
+                    }
+
+                    li:nth-child(2){
+                        
+                        margin-top: 0.6rem
+                    }
+                 ;
+            }
+
+            .socialInfo{
+                margin-top: 1rem;
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
                 
-                flex-direction: column;
-                li{
-                    img{
-                        width: 2rem;
-                        margin-right: 1rem;
-                    }                
-                 }
-        }
-        .socialInfo{
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color:aqua;
-            align-items: center;
-            
-        }
+                align-items: center;
+                
+            }
 
 
         }
@@ -161,6 +244,90 @@
             
         }
     }
+
+    
+    .section:nth-child(4){
+
+        padding:4rem 1rem;
+        
+        background-color: #fff;
+
+        .contactWrap{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .contactForm{
+                width: 50%;
+                max-width: 40rem;
+                h3{
+                    
+                }
+        
+                form{
+                    
+        
+                    p{
+                       
+                    }
+        
+                    input{
+                        
+                    }
+        
+                    .submit{
+                       
+                    }
+                }
+            }
+        
+            .sectionContent{
+                margin-top: 0;
+                width: 50%;
+                
+                .contactContent{
+                   
+                    p{
+                        
+                    }
+                }
+        
+                .contactSocial{
+                    width: 70%;
+                   
+        
+                    h3{
+                        
+                    }
+        
+                    ul{
+                        
+                        li{
+                            
+                        }
+                    }
+        
+                    .contactInfo{
+                        width: 100%;
+                            li{
+                                img{
+                                   
+                                }                
+                            }
+                    }
+        
+                    .socialInfo{
+                       width: 12rem;
+                        
+                    }
+                }
+            }
+
+        }
+       
+    }
+    
     
 
     .sectionContent{
@@ -210,5 +377,9 @@
 @media only screen and (min-width: 1280px){
     .sectionContent{
         max-width: 80rem;
+    }
+
+    .contactWrap{
+        width: 80vw;
     }
 }

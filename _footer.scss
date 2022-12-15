@@ -1,0 +1,38 @@
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #131313;
+    color: #fff;
+    
+    height: 20rem;
+    padding: 2rem 1rem;
+    margin: 0;
+
+    .footerContainer{
+        font-family: var(--Lato-Font);
+        text-align: center;
+        font-weight: lighter;
+        margin: 0;
+        width: 80%;
+
+        h3, hr{
+            margin-top: 1rem;
+            font-weight: lighter;
+        }
+
+        hr{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+
+    footer{
+        margin-top: 2rem;
+        .footerContainer{
+            max-width: 90%;
+        }
+    }
+    
+}
