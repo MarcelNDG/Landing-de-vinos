@@ -287,6 +287,14 @@ footer .footerContainer hr {
     max-width: 90%;
   }
 }
+.mobileMenu {
+  top: 0px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #131313;
+  opacity: 0.8;
+}
 :root {
   --logo-color: rgb(255, 187, 0);
   --Libre-Font:"Libre Baskerville";
@@ -300,6 +308,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
 body, h1, h2, h3, p, ul, li {

@@ -1,6 +1,7 @@
 
 @use 'sections';
 @use 'footer';
+@use 'mobileMenu';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root{
@@ -16,6 +17,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;  
+    position: relative;
 }
 
 body,h1,h2,h3,p,ul,li{
